@@ -82,7 +82,7 @@ const Dashboard = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <main className="py-12 lg:py-16 space-y-12 lg:space-y-16">
           {viewMode === "overview" && (
             <>

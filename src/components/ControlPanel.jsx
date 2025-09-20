@@ -91,7 +91,7 @@ const ControlPanel = ({
           : "bg-white/90 border-gray-200/50"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-5 lg:space-y-0">
           <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-3 text-sm font-medium text-gray-600 dark:text-gray-400">

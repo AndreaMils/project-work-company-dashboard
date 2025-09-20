@@ -59,7 +59,7 @@ const DashboardHeader = ({
           : "bg-white/95 border-gray-200/50 backdrop-blur-lg"
       } shadow-sm`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4 lg:py-5">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4 lg:py-5">
         <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between space-y-6 xl:space-y-0">
           <div className="flex items-center space-x-6 lg:space-x-8">
             <div
