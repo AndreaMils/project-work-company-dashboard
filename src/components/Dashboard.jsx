@@ -168,7 +168,7 @@ const Dashboard = () => {
         </main>
 
         <footer
-          className={`mt-16 lg:mt-20 border-t backdrop-blur-sm ${
+          className={`mt-16 lg:mt-20 border-t backdrop-blur-sm px-4 ${
             isDarkMode
               ? "border-gray-700/50 bg-gray-800/80"
               : "border-gray-200/50 bg-white/80"
@@ -191,8 +191,12 @@ const Dashboard = () => {
               <div
                 className={`flex items-center space-x-2 px-3 py-1 rounded-full ${
                   isRealTimeActive
-                    ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                    : "bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400"
+                    ? isDarkMode
+                      ? "bg-green-900/30 text-green-400"
+                      : "bg-green-100 text-green-700"
+                    : isDarkMode
+                    ? "bg-gray-700 text-gray-400"
+                    : "bg-gray-100 text-gray-600"
                 }`}
               >
                 <span

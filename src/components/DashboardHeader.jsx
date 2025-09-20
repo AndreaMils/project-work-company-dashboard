@@ -71,26 +71,70 @@ const DashboardHeader = ({
             ></div>
 
             <div className="flex-1 min-w-0">
-              <h1 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-white">
+              <h1 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text dark::text-white text-gray-700">
                 Azienda Agricola "Terra Verde"
               </h1>
               <div className="flex flex-col gap-6 text-sm text-gray-500 mt-4">
-                <div className="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-full w-fit">
-                  <MapPin className="w-4 h-4" />
-                  <span className="font-medium">Pianura Padana, Italia</span>
+                <div
+                  className={`flex items-center gap-3 px-4 py-2 rounded-full w-fit ${
+                    isDarkMode ? "bg-gray-700" : "bg-gray-100"
+                  }`}
+                >
+                  <MapPin
+                    className={`w-4 h-4 ${
+                      isDarkMode ? "text-gray-300" : "text-gray-600"
+                    }`}
+                  />
+                  <span
+                    className={`font-medium ${
+                      isDarkMode ? "text-gray-200" : "text-gray-700"
+                    }`}
+                  >
+                    Pianura Padana, Italia
+                  </span>
                 </div>
-                <div className="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-full w-fit">
-                  <Calendar className="w-4 h-4" />
-                  <span className="font-medium">
+                <div
+                  className={`flex items-center gap-3 px-4 py-2 rounded-full w-fit ${
+                    isDarkMode ? "bg-gray-700" : "bg-gray-100"
+                  }`}
+                >
+                  <Calendar
+                    className={`w-4 h-4 ${
+                      isDarkMode ? "text-gray-300" : "text-gray-600"
+                    }`}
+                  />
+                  <span
+                    className={`font-medium ${
+                      isDarkMode ? "text-gray-200" : "text-gray-700"
+                    }`}
+                  >
                     {formatDate(currentData.timestamp)}
                   </span>
                 </div>
-                <div className="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-full w-fit">
-                  <span className="font-bold text-green-600">
+                <div
+                  className={`flex items-center gap-3 px-4 py-2 rounded-full w-fit ${
+                    isDarkMode ? "bg-gray-700" : "bg-gray-100"
+                  }`}
+                >
+                  <span
+                    className={`font-bold ${
+                      isDarkMode ? "text-green-400" : "text-green-600"
+                    }`}
+                  >
                     {getTotalArea()} ha
                   </span>
-                  <span className="mx-2">•</span>
-                  <span className="font-medium">
+                  <span
+                    className={`mx-2 ${
+                      isDarkMode ? "text-gray-400" : "text-gray-500"
+                    }`}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={`font-medium ${
+                      isDarkMode ? "text-gray-200" : "text-gray-700"
+                    }`}
+                  >
                     {getActiveCrops()} colture attive
                   </span>
                 </div>
@@ -128,7 +172,11 @@ const DashboardHeader = ({
               </span>
             </div>
 
-            <div className="flex items-center bg-gray-100 dark:bg-gray-700 rounded-xl p-2 shadow-md gap-1">
+            <div
+              className={`flex items-center rounded-xl p-2 shadow-md gap-1 ${
+                isDarkMode ? "bg-gray-700" : "bg-gray-100"
+              }`}
+            >
               <button
                 onClick={onToggleRealTime}
                 className={`p-3 rounded-lg transition-all duration-200 ${
