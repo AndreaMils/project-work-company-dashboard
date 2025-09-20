@@ -41,6 +41,7 @@ yarn dev
 
 - `yarn dev` - Server di sviluppo
 - `yarn build` - Build di produzione
+- `yarn preview` - Per eseguire in locale la build generata
 - `yarn lint` - Verifica codice
 
 ## Struttura Progetto
